@@ -7,9 +7,9 @@
 /* Import de folhas de estilo - CSS */
 
 @import url(../header.css);
-@import url(./css/pesquisa.css);
-@import url(../src/css/carrosel.css);
-@import url(../css/topicos.css);
+@import url(./pesquisa.css);
+@import url(/carrosel.css);
+@import url(topicos.css);
 @import url(../css/rodape.css);
 @import url(../css/contato.css);
 
