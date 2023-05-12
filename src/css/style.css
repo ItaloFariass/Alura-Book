@@ -1,0 +1,49 @@
+/*      link do Figma do projeto e do Curso relativo ao projeto
+    https://www.figma.com/file/QTQ4RmxTLlJY6SFuwN7QTI/AluraBooks-(Copy)?node-id=37%3A94&t=b3ejgSMAxhXHePE8-0 
+    https://cursos.alura.com.br/course/html-css-responsividade-mobile-first
+*/
+
+
+/* Import de folhas de estilo - CSS */
+
+@import url(/src/css/header.css);
+@import url(/src/css/pesquisa.css);
+@import url(/src/css/carrosel.css);
+@import url(/src/css/topicos.css);
+@import url(/src/css/rodape.css);
+@import url(/src/css/contato.css);
+
+
+/* Import de Fontes */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap');
+
+
+/* Variaveis do projeto */
+:root{
+        /* Cores  */
+    --cor-fundo: #EBECEE;
+    --preto-texto: rgba(0, 0, 0, 0.85);
+    --laranja: #EB9B00;
+    --azul: #002F52;
+    --azul-gradiente: linear-gradient(97.54deg, #002F52 35.49%, #326589 165.37%);
+    --branco: #FFFFFF;
+    --cinza-titulo:#858585;
+    --cinza-sub:#474646;
+
+        /* Fontes  */
+    --font-padrao: 'Poppins', sans-serif;
+    --font-secundaria: 'Josefin Sans', sans-serif;
+}
+
+body{
+    background-color: var(--cor-fundo);
+    font-family: var(--font-padrao);
+    color: var(--branco);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+

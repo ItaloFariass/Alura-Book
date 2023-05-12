@@ -1,0 +1,185 @@
+.carrosel__titulo{
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 18px; 
+    padding: 1.5em 0 1em 0;
+    color: var(--laranja);
+    background-color: var(--branco);
+    
+}
+
+
+
+.swiper-slide img{
+    width: 100%;
+    
+
+}
+
+.swiper-button-prev, .swiper-button-next{
+    display: none;
+}
+
+.swiper-pagination{
+    position: initial;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.card{
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 1em;
+    margin-bottom: 1em;
+    padding: 1em;
+    height: 60%;
+}
+
+.card__descricao{
+    display: flex;
+    justify-content: space-between;
+}
+
+.descricao{
+    line-height: 21px;
+    margin-bottom: 1em;
+}
+
+.descricao__titulo{
+    color: var(--laranja);
+    font-weight: 700;
+}
+
+.descricao__titulo-livro{
+    color: var(--azul);
+    font-weight: 700;
+    font-size: 18px;
+    margin: 9px 0;
+}
+
+.descricao__texto{
+    color: var(--preto-texto);
+    font-size: 14px;
+    width: 9.5rem;
+}
+
+.descricao__imagem{
+    margin-left: 1em;
+}
+
+.botoes{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botoes__lista{
+    display: flex;
+}
+
+.botoes__lista-item{
+    margin: 1rem 0.5rem;
+}
+
+
+.botao-saiba-mais{
+    background-color: var(--laranja);
+    color: var(--branco);
+    font-weight: 700;
+    text-decoration: none;
+    align-self: center;
+    margin-top: 1rem;
+    padding: 1rem 2.2rem;
+}
+
+.estrelas{
+    margin: 0.5rem 0;
+}
+
+.menu__desktop{
+    display: none;
+}
+
+@media (min-width: 1024px){
+
+    .swiper{
+        width: 50%;
+        margin:  0 auto;
+
+    }
+    
+    .swiper-pagination{
+        margin-bottom: 2em;
+    }
+
+
+    .swiper-slide{
+        max-width: 100%;
+        overflow-x: visible;
+        
+    }
+
+    .swiper-button-prev, .swiper-button-next{
+        display:block;
+        padding: 0.5rem;
+        color: var(--azul);
+        border-radius: 90px ;
+
+    }
+
+    .card{
+        width: 588px;
+        margin: 2.5rem auto;
+    }
+    .descricao__texto{
+        width: 20rem;
+    }
+
+}
+
+@media (min-width: 1728px){
+    .carrosel{
+        display: grid;
+        grid-template-areas:
+        "titulo titulo"
+        "swiper card";
+        grid-template-rows: 15% 85% ;
+        grid-template-columns: 50% 50%;
+        justify-content: center;
+
+    }
+
+    .carrosel__titulo{
+        grid-area: titulo;
+    }
+
+    .swiper{
+        grid-area: swiper;
+        width: 70%;
+    }
+
+    .card{
+        grid-area: card;
+    }
+
+    .card, .swiper{
+        margin: 3rem auto;
+        align-self: center;
+        height: 278px;
+    }
+    .swiper-pagination{
+        position: initial;
+        margin: 1rem 0;
+    }
+    
+
+    .menu__desktop{
+        
+        display:block;
+        color: var(--preto-texto);
+        font-size: 20px;
+        margin-right: 3rem;
+        text-decoration: none;
+    }
+
+}
