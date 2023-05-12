@@ -6,12 +6,12 @@
 
 /* Import de folhas de estilo - CSS */
 
-@import url(../header.css);
+@import url(./header.css);
 @import url(./pesquisa.css);
-@import url(/carrosel.css);
-@import url(topicos.css);
-@import url(../css/rodape.css);
-@import url(../css/contato.css);
+@import url(./carrosel.css);
+@import url(./topicos.css);
+@import url(./rodape.css);
+@import url(./contato.css);
 
 
 /* Import de Fontes */
